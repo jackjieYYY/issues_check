@@ -14,9 +14,7 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: '3.10'
-    - name: curl install
-      run: |
-        apt install -y curl
+
     - name: qq bot
       run: |
         curl --location --request POST 'http://mc.mesord.com:8098/api/send_msg_auto' --header Content-Type: application/json' --data-raw '{token":"${{ secrets.KEY }}","uid":913468406,"msg":"test"}'
