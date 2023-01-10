@@ -17,4 +17,4 @@ jobs:
 
     - name: qq bot
       run: |
-        curl --location --request POST 'http://mc.mesord.com:8098/api/send_msg_auto' --header Content-Type: application/json' --data-raw '{token":"${{ secrets.KEY }}","uid":913468406,"msg":"test"}'
+        curl --location --request POST 'http://mc.mesord.com:8098/api/send_msg_auto' --header Content-Type: 'application/json' --data-raw '{token":"${{ secrets.KEY }}","uid":913468406,"msg":"test"}'
