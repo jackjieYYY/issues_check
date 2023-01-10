@@ -3,6 +3,8 @@ name: Python Package using Conda
 on: 
   issue_comment:
     types: [created,edited,deleted]
+  issues:
+    types: [opened, edited, milestoned]
 jobs:
   build-linux:
     runs-on: ubuntu-latest
